@@ -1,5 +1,5 @@
 {
-    "name": "Today Software Module",
+    "name": "Calendar Service",
     "dockerComposeFile": "./docker-compose.yml",
     "workspaceFolder": "/home/node/workspace",
     "overrideCommand": true,
