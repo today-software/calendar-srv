@@ -4,5 +4,6 @@
 
 
 export default {
-  Base: '/api',
+  Base: '/calendar-srv',
+  Graphql:'/graphql',
 } as const;

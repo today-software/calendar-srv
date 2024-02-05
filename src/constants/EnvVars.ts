@@ -4,7 +4,6 @@
 
 /* eslint-disable node/no-process-env */
 
-
 export default {
   NodeEnv: (process.env.NODE_ENV ?? ''),
   Port: (process.env.PORT ?? 0),
@@ -20,6 +19,13 @@ export default {
       domain: (process.env.COOKIE_DOMAIN ?? ''),
       secure: (process.env.SECURE_COOKIE === 'true'),
     },
+  },
+  DataBase:{
+    Host: (process.env.DB_HOST ?? 'localhost'),
+    Port: (process.env.DB_PORT ?? 3306),
+    Name: (process.env.DB_NAME ?? ''),
+    User: (process.env.DB_USER ?? 'root'),
+    Password: (process.env.DB_PASSWORD ?? ''),
   },
   Jwt: {
     Secret: (process.env.JWT_SECRET ??  ''),

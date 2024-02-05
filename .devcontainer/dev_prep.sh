@@ -2,7 +2,7 @@ DB_HOST=${DB_HOST}
 DB_PORT=${DB_PORT:-3306}
 MAX_ATTEMPTS=10
 attempt=0
-until mysqladmin ping -h"$DB_HOST" -P"$DB_PORT" -u root -p"$DB_PASSWORD"; do
+until mysqladmin ping -h"$DB_HOST" -P"$DB_PORT" -u "$DB_USER" -p"$DB_PASSWORD"; do
     if [ $attempt -ge $MAX_ATTEMPTS ]; then
         echo "Error: Unable to connect to database at $DB_HOST:$DB_PORT"
         exit 1

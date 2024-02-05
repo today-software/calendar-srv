@@ -48,7 +48,7 @@ CREATE TABLE `event_records` (
   `metaInfo` text DEFAULT NULL,
   PRIMARY KEY (`eventId`),
   KEY `calendarId` (`calendarId`),
-  CONSTRAINT `EventsRecords_ibfk_1` FOREIGN KEY (`calendarId`) REFERENCES `CalendarRecords` (`calendarId`)
+  CONSTRAINT `EventsRecords_ibfk_1` FOREIGN KEY (`calendarId`) REFERENCES `calendar_records` (`calendarId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
