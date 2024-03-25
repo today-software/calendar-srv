@@ -61,10 +61,6 @@ app.use((
   return res.status(status).json({ error: err.message });
 });
 
-// app.get('/api', (req, res) => {
-//   res.send('Hello World');
-// });
-
 // **** Export default **** //
 
 export default app;

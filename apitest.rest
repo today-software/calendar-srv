@@ -1,8 +1,8 @@
 @protocol = http 
 @hostname = localhost
-@port = 3000
+@port = 3003
 @host = {{protocol}}://{{hostname}}:{{port}}
-@urlPrefix = /api
+@urlPrefix = /calendar-svr
 @contentType = application/json
 @username = admin
 @password = password
